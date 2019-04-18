@@ -12,11 +12,11 @@ abstract public class Feature {
     //the size of the sprite on the canvas,
     //and a list of all the possible images that the sprite can appear as
 
-    private Image sprite;
-    private double size;
-    private ArrayList<Image> spriteList;    //since all spriteLists will be different, the variable is empty here
+    protected Image sprite;
+    protected double size;
+    protected ArrayList<Image> spriteList;    //since all spriteLists will be different, the variable is empty here
 
-    private Random random = new Random();   //this object will be used to generate random numbers
+    protected Random random = new Random();   //this object will be used to generate random numbers
 
     Feature() {                 //all subclasses of Feature will automatically have to create their spriteList
         createSpriteList();     //and randomize their size and sprite when created, so these have been permanently
