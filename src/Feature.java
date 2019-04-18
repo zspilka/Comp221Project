@@ -15,8 +15,8 @@ abstract public class Feature {
 
     protected Image sprite;
     protected double size;
-    protected ArrayList<Image> spriteList;    //since all spriteLists will be different, the variable is empty here
-//    protected Map <String, Image> spriteList;
+    protected ArrayList<Image> spriteList;          //since all spriteLists will be different, the variable is empty here
+//    protected Map <String, Image> spriteList;     //spriteList may be used as a Map
 
     protected Random random = new Random();   //this object will be used to generate random numbers
 
