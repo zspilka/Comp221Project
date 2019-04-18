@@ -12,6 +12,6 @@ public class Eyes extends Feature {
         ImageIcon icon = new ImageIcon("blueEye.png");
         Image image = icon.getImage();
         spriteList.add(image);
-        System.out.println(spriteList.get(0).getClass());
+//        System.out.println(spriteList.get(0).getClass());
     }
 }
