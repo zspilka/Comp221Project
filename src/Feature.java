@@ -18,9 +18,10 @@ abstract public class Feature {
 
     private Random random = new Random();   //this object will be used to generate random numbers
 
-    Feature() {             //all subclasses of Feature will automatically randomize their size and
-        randomizeSize();    //sprite when created, so these have been permanently added to the Feature
-        randomizeSprite();  //constructor (which the subclasses will use)
+    Feature() {                 //all subclasses of Feature will automatically have to create their spriteList
+        createSpriteList();     //and randomize their size and sprite when created, so these have been permanently
+        randomizeSize();        //added to the Feature constructor (which the subclasses will use)
+        randomizeSprite();
     }
 
     abstract protected void createSpriteList();     //since every spriteList will be different between
