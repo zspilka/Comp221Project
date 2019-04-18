@@ -1,5 +1,6 @@
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.Random;
 
 /**The basic parent class "Feature," which all subclasses will use.
@@ -15,6 +16,7 @@ abstract public class Feature {
     protected Image sprite;
     protected double size;
     protected ArrayList<Image> spriteList;    //since all spriteLists will be different, the variable is empty here
+//    protected Map <String, Image> spriteList;
 
     protected Random random = new Random();   //this object will be used to generate random numbers
 
