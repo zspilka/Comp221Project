@@ -32,7 +32,8 @@ public class DrawingWindowBuilder extends JPanel implements GraphicsObserver {
         winFrame.getContentPane().add(this);
         winFrame.pack();
         winFrame.setVisible(true);
-        winFrame.add(aye);
+        
+
 
 
 //        win.add(aye);
