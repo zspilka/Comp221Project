@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 
 public class Eyes extends Feature {
 
@@ -9,9 +10,13 @@ public class Eyes extends Feature {
 
     @Override
     protected void createSpriteList() {
+//        spriteList = new ArrayList<>();
+
         ImageIcon icon = new ImageIcon("blueEye.png");
         Image image = icon.getImage();
         spriteList.add(image);
+        System.out.println(spriteList);
+
 //        System.out.println(spriteList.get(0).getClass());
     }
 }

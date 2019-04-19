@@ -15,12 +15,13 @@ abstract public class Feature {
 
     protected Image sprite;
     protected double size;
-    protected ArrayList<Image> spriteList;          //since all spriteLists will be different, the variable is empty here
+    protected ArrayList<Image> spriteList = new ArrayList<>(9);          //since all spriteLists will be different, the variable is empty here
 //    protected Map <String, Image> spriteList;     //spriteList may be used as a Map
 
     protected Random random = new Random();   //this object will be used to generate random numbers
 
     Feature() {                 //all subclasses of Feature will automatically have to create their spriteList
+//        spriteList = new ArrayList<>();
         createSpriteList();     //and randomize their size and sprite when created, so these have been permanently
         randomizeSize();        //added to the Feature constructor (which the subclasses will use)
         randomizeSprite();
@@ -30,7 +31,8 @@ abstract public class Feature {
                                                     //the subclasses of Feature, there's no point in
                                                     //defining createSpriteList here
 
-    protected void randomizeSprite() {                  //randomizeSprite uses the variable 'random' to create
+    protected void randomizeSprite() {
+        System.out.println(spriteList.size());           //randomizeSprite uses the variable 'random' to create
         int index = random.nextInt(spriteList.size());  //a random integer less than or equal to the size of
         sprite = spriteList.get(index);                 //spriteList. The sprite variable is then assigned to
     }                                                   // the Image in spriteList at that index
