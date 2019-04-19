@@ -12,7 +12,10 @@ import java.util.NoSuchElementException;
 import java.util.concurrent.ConcurrentLinkedDeque;
 
 /**
- * For now, abadoning this because its a little too convaluted/Complicated, will work on this more once I figure out how to add a png file to the canvas.
+ * For now, abadoning this file in favor of CanvasWindow.java because this is becoming a little too
+ * complicated and slightly convoluted.
+ * will work on this more once I figure out how to add a png file to the canvas.
+ *
  */
 
 public class DrawingWindowBuilder extends CanvasWindow {
