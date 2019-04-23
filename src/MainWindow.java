@@ -13,7 +13,7 @@ public class MainWindow{
         win.add(image);
 
         Feature [] spriteList = {new Eyes(), new Lips(), new Hair(), new Nose(), new Brow()};
-
+        System.out.println(spriteList);
 //        System.out.println(feature.spriteList.size());
 //        feature.printSprite();
 
