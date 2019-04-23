@@ -58,4 +58,12 @@ abstract public class Feature {
         return size;
     }
 
+    public ArrayList<Image> getSpriteList(){
+        return spriteList;
+    }
+
+    public void printSprite(){
+        System.out.println(spriteList.toString());
+    }
+
 }

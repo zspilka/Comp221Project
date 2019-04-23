@@ -8,15 +8,10 @@ public class Eyes extends Feature {
 
     @Override
     protected void createSpriteList() {
-//        spriteList = new ArrayList<>();
-
-//        ImageIcon icon = new ImageIcon("Images/blueEye.png");
-//        Image image = icon.getImage();
         Image image = new Image(0,0, "/Users/zazu/IdeaProjects/Comp221Project/Images/greenEye.jpg");
-
         spriteList.add(image);
-//        System.out.println(spriteList);
+        image = new Image (1,1, "/Users/zazu/IdeaProjects/Comp221Project/Images/blueEye.png");
+        spriteList.add(image);
 
-//        System.out.println(spriteList.get(0).getClass());
     }
 }
