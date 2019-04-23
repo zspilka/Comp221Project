@@ -1,4 +1,5 @@
-import java.awt.*;
+import comp124graphics.Image;
+
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Random;
@@ -56,4 +57,5 @@ abstract public class Feature {
     public double getSize() {
         return size;
     }
+
 }
