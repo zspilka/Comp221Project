@@ -23,7 +23,7 @@ public class MainWindow {
 //        ImageIcon icon = new ImageIcon("greenEye.png");
 //        java.awt.Image image = icon.getImage();
 
-        image = new Image (0,0, "/Users/zazu/IdeaProjects/Comp221Project/src/greenEye.jpg");
+        image = new Image (0,0, "/Users/zazu/IdeaProjects/Comp221Project/Images/greenEye.jpg");
 
 
 
