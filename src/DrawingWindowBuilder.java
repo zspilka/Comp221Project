@@ -1,15 +1,7 @@
 import comp124graphics.CanvasWindow;
-import comp124graphics.GraphicsObject;
-import comp124graphics.GraphicsObserver;
 import javafx.scene.canvas.Canvas;
-import javafx.scene.image.Image;
 
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.WindowEvent;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.concurrent.ConcurrentLinkedDeque;
 
 /**
  * For now, abadoning this file in favor of CanvasWindow.java because this is becoming a little too
@@ -25,7 +17,7 @@ public class DrawingWindowBuilder extends CanvasWindow {
 
 
     public void createWindow(String title, int winWidth, int winHeight) {
-        ImageIcon icon = new ImageIcon("blueEye.png");
+        ImageIcon icon = new ImageIcon("Images/blueEye.png");
         java.awt.Image image = icon.getImage();
 
 //        GraphicsContext gc = win.getGraphicsContext2D();
