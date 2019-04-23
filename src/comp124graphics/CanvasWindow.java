@@ -1,6 +1,4 @@
-import comp124graphics.GraphicsGroup;
-import comp124graphics.GraphicsObject;
-import comp124graphics.GraphicsObserver;
+package comp124graphics;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -165,7 +163,7 @@ public class CanvasWindow extends JPanel implements GraphicsObserver{
      */
     private boolean isGGat(GraphicsObject obj, double x, double y) {
         if (obj instanceof GraphicsGroup) {
-            Rectangle rect = obj.getBounds();
+            java.awt.Rectangle rect = obj.getBounds();
             if (rect.getX() <= x && x<= (rect.getX() + rect.getWidth())) {
                 if (rect.getY() <= y && y <= (rect.getY()+rect.getHeight())) {
                     return true;
@@ -231,6 +229,7 @@ public class CanvasWindow extends JPanel implements GraphicsObserver{
     public void closeWindow() {
         windowFrame.dispatchEvent(new WindowEvent(windowFrame, WindowEvent.WINDOW_CLOSING));
     }
+
 }
 
 

@@ -1,4 +1,5 @@
-import comp124graphics.GraphicsObject;
+package comp124graphics;
+
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -13,7 +14,7 @@ import java.nio.file.Paths;
  * Created by bjackson on 9/15/2016.
  * @version 0.5
  */
-public class ImageZ extends GraphicsObject{
+public class Image extends GraphicsObject{
     private BufferedImage img;
     private int x;
     private int y;
@@ -26,7 +27,7 @@ public class ImageZ extends GraphicsObject{
      * @param y position
      * @param filePath filepath to image file to load.
      */
-    public ImageZ(int x, int y, String filePath){
+    public Image(int x, int y, String filePath){
         this.x = x;
         this.y = y;
         this.filePath = filePath;
@@ -137,8 +138,8 @@ public class ImageZ extends GraphicsObject{
      */
     @Override
     public boolean equals(Object other){
-        if (other != null && other instanceof ImageZ){
-            ImageZ otherImg = (ImageZ)other;
+        if (other != null && other instanceof Image){
+            Image otherImg = (Image)other;
             if (this.img.equals(otherImg.img) && this.x==otherImg.x && this.y == otherImg.y){
                 return true;
             }
@@ -159,7 +160,7 @@ public class ImageZ extends GraphicsObject{
      * Returns an axis aligned bounding rectangle for the graphical object.
      * @return
      */
-    public Rectangle getBounds(){
-        return new Rectangle((int)getX(), (int)getY(), (int)getWidth(), (int)getHeight());
+    public java.awt.Rectangle getBounds(){
+        return new java.awt.Rectangle((int)getX(), (int)getY(), (int)getWidth(), (int)getHeight());
     }
 }
