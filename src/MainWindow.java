@@ -13,7 +13,9 @@ public class MainWindow{
         win.add(image);
 
         Feature [] spriteList = {new Eyes(), new Lips(), new Hair(), new Nose(), new Brow()};
-        System.out.println(spriteList);
+        for (int i =0; i< spriteList.length; i++){
+            System.out.println(spriteList[i].getSpriteList());
+        }
 //        System.out.println(feature.spriteList.size());
 //        feature.printSprite();
 
