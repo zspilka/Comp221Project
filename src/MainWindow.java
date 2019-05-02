@@ -7,7 +7,7 @@ public class MainWindow{
     protected static Image image;
 
     public static void main(String[] args) {
-        
+
         win = new CanvasWindow("Avatar", 500, 500);
 
 
