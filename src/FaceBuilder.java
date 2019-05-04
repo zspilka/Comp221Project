@@ -15,7 +15,7 @@ public class FaceBuilder extends JFrame {
     public FaceBuilder() {
 //        JFrame frame = new JFrame("Avatar");
         Feature [] spriteList = {new Head(), new Hair(), new Eyes(), new Lips(), new Nose(), new Brow()};
-        ImageIcon head = getScaledImage(spriteList[0].getSprite(),500,500);
+        ImageIcon head = getScaledImage(spriteList[0].getSprite(),(int) spriteList[0].getSize(),(int) spriteList[0].getSize());
         ImageIcon hair = getScaledImage(spriteList[1].getSprite(),500,500);
         ImageIcon eyes = getScaledImage(spriteList[2].getSprite(),500,500);
         ImageIcon lips = getScaledImage(spriteList[3].getSprite(),500,500);
@@ -143,22 +143,22 @@ public class FaceBuilder extends JFrame {
     }
 
 
-//    public static void main (String[] args) {
-//        SwingUtilities.invokeLater(new Runnable() {
-//            public void run() {
-//                new FaceBuilder();
-//            }
-//        });
-//
-////        win = new CanvasWindow("Avatar", 500, 500);
-//
-//
-//
-////        System.out.println(feature.spriteList.size());
-////        feature.printSprite();
-//
-//
-//    }
+    public static void main (String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                new FaceBuilder();
+            }
+        });
+
+//        win = new CanvasWindow("Avatar", 500, 500);
+
+
+
+//        System.out.println(feature.spriteList.size());
+//        feature.printSprite();
+
+
+    }
 
 
 

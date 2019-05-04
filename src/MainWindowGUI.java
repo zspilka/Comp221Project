@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseListener;
 
-public class MainWindowGUI extends JFrame implements MouseListener, MouseListener {
+public class MainWindowGUI extends JFrame  {
 
     private JButton avatarButton;
     private FaceBuilder faceBuilder;
