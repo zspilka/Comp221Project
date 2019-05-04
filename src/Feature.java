@@ -68,6 +68,11 @@ abstract public class Feature {
         System.out.println(spriteList.toString());
     }
 
+    public ImageIcon getRandomSprite(){
+        randomizeSprite();
+        return sprite;
+    }
+
 
 
 }

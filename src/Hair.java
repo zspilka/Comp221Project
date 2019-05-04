@@ -1,5 +1,3 @@
-import comp124graphics.Image;
-
 import javax.swing.*;
 
 public class Hair extends Feature {
@@ -42,7 +40,7 @@ public class Hair extends Feature {
 //        Image image12 = new Image (0,0, "Hair/WeirdToupee-1.png");
 //        spriteList.add(image12);
 
-        ImageIcon icon = new ImageIcon("Hair/BabySprig-1.png");
+        ImageIcon icon = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Hair/BabySprig-1.png");
 //        Image image = icon.getImage();
 //        image.getScaledInstance(2,5,50);
 
@@ -50,27 +48,27 @@ public class Hair extends Feature {
         //        java.awt.Image image = new Image(0,0, "/Users/zazu/IdeaProjects/Comp221Project/Eyes/EyePair2_blue.png");
 //        java.awt.Image newImage = image;
         spriteList.add(icon);
-        ImageIcon icon2 = new ImageIcon("Hair/Balding-1.png");
+        ImageIcon icon2 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Hair/Balding-1.png");
         spriteList.add(icon2);
-        ImageIcon icon3 = new ImageIcon("Hair/Buzzed-1.png");
+        ImageIcon icon3 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Hair/Buzzed-1.png");
         spriteList.add(icon3);
-        ImageIcon icon4 = new ImageIcon("Hair/ChinCurls-1.png");
+        ImageIcon icon4 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Hair/ChinCurls-1.png");
         spriteList.add(icon4);
-        ImageIcon icon5 = new ImageIcon("Hair/ChinLength-1.png");
+        ImageIcon icon5 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Hair/ChinLength-1.png");
         spriteList.add(icon5);
-        ImageIcon icon6 = new ImageIcon("Hair/Clips-1.png");
+        ImageIcon icon6 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Hair/Clips-1.png");
         spriteList.add(icon6);
-        ImageIcon icon7 = new ImageIcon("Hair/Flat-1.png");
+        ImageIcon icon7 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Hair/Flat-1.png");
         spriteList.add(icon7);
-        ImageIcon icon8 = new ImageIcon("Hair/Goatee-1.png");
+        ImageIcon icon8 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Hair/Goatee-1.png");
         spriteList.add(icon8);
-        ImageIcon icon9 = new ImageIcon("Hair/Mohawk-1.png");
+        ImageIcon icon9 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Hair/Mohawk-1.png");
         spriteList.add(icon9);
-        ImageIcon icon10 = new ImageIcon("Hair/Shaved-1.png");
+        ImageIcon icon10 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Hair/Shaved-1.png");
         spriteList.add(icon10);
-        ImageIcon icon11 = new ImageIcon("Hair/UglyDo-1.png");
+        ImageIcon icon11 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Hair/UglyDo-1.png");
         spriteList.add(icon11);
-        ImageIcon icon12 = new ImageIcon("Hair/WeirdToupee-1.png");
+        ImageIcon icon12 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Hair/WeirdToupee-1.png");
         spriteList.add(icon12);
 
     }
