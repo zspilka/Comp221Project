@@ -3,6 +3,7 @@ package comp124graphics;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.Image;
 import java.awt.event.WindowEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -84,6 +85,23 @@ public class CanvasWindow extends JPanel implements GraphicsObserver{
 //        gObjects.add(gObject);
 //        repaint();
     }
+
+
+    /**
+     * Adds the graphical object to the list of objects drawn on the canvas
+     * at the position x, y.
+     *
+     * @param Image  the graphical object to be drawn
+     * @param x        the x position of graphical object
+     * @param y        the y position of graphical object
+     */
+//    public void addIm(Image gObject, double x, double y){
+//        gObject.setPosition(x, y);
+//        this.add(gObject);
+////        gObject.addObserver(this);
+////        gObjects.add(gObject);
+////        repaint();
+//    }
 
     /**
      * Removes the object from being drawn

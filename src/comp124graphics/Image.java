@@ -54,6 +54,31 @@ public class Image extends GraphicsObject{
         gc.drawImage(img, x, y, null);
     }
 
+//    public BufferedImage scaleImage(int WIDTH, int HEIGHT) {
+//        BufferedImage bi = null;
+//        try {
+//            bi = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_RGB);
+//            Graphics2D g2d = (Graphics2D) bi.createGraphics();
+//            g2d.addRenderingHints(new RenderingHints(RenderingHints.KEY_RENDERING,RenderingHints.VALUE_RENDER_QUALITY));
+//            g2d.drawImage(img, x, y, WIDTH, HEIGHT, null);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            return null;
+//        }
+//        return bi;
+//    }
+//
+//    public BufferedImage getScaledImage(int wt, int ht) {
+//        BufferedImage resizedImg = new BufferedImage(wt, ht, BufferedImage.TYPE_INT_ARGB);
+//        Graphics2D g2 = resizedImg.createGraphics();
+//
+//        g2.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
+//        g2.drawImage(img, x, y, wt, ht, null);
+//        g2.dispose();
+//
+//        return resizedImg;
+//    }
+
     /**
      * Get the shape's x position
      * @return x position
@@ -163,4 +188,5 @@ public class Image extends GraphicsObject{
     public java.awt.Rectangle getBounds(){
         return new java.awt.Rectangle((int)getX(), (int)getY(), (int)getWidth(), (int)getHeight());
     }
+
 }

@@ -1,5 +1,7 @@
-import comp124graphics.Image;
+//import comp124graphics.Image;
 
+import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Random;
@@ -14,22 +16,17 @@ abstract public class Feature {
     //the size of the sprite on the canvas,
     //and a list of all the possible images that the sprite can appear as
 
-    protected Image sprite;
+    protected ImageIcon sprite;
     protected double size;
-    protected ArrayList<Image> spriteList = new ArrayList<>(9); //since all spriteLists will be different, the variable is empty here
-//    protected Map <String, Image> spriteList;                              //spriteList may be used as a Map
+    protected ArrayList<ImageIcon> spriteList = new ArrayList<>(9);          //since all spriteLists will be different, the variable is empty here
+//    protected Map <String, Image> spriteList;     //spriteList may be used as a Map
 
     protected Random random = new Random();   //this object will be used to generate random numbers
 
     Feature() {                 //all subclasses of Feature will automatically have to create their spriteList
+//        spriteList = new ArrayList<>();
         createSpriteList();     //and randomize their size and sprite when created, so these have been permanently
         randomizeSize();        //added to the Feature constructor (which the subclasses will use)
-        randomizeSprite();
-    }
-
-    Feature(int weirdnessLevel) {       //all subclasses of Feature will automatically have to create their spriteList
-        createSpriteList();             //and randomize their size and sprite when created, so these have been permanently
-        randomizeSize();                //added to the Feature constructor (which the subclasses will use)
         randomizeSprite();
     }
 
@@ -37,15 +34,12 @@ abstract public class Feature {
                                                     //the subclasses of Feature, there's no point in
                                                     //defining createSpriteList here
 
-    protected void randomizeSprite() {                   //randomizeSprite uses the variable 'random' to create
+    protected void randomizeSprite() {
+        System.out.println(spriteList.size());           //randomizeSprite uses the variable 'random' to create
         int index = random.nextInt(spriteList.size());  //a random integer less than or equal to the size of
         sprite = spriteList.get(index);                 //spriteList. The sprite variable is then assigned to
     }                                                   // the Image in spriteList at that index
 
-    protected void randomizeSpriteRange(int maxBound, int minBound) {       //a version of randomizeSprite that
-        int index = random.nextInt(maxBound - minBound) + minBound;  //uses a given range to generate an
-        sprite = spriteList.get(index);                                     //index
-    }
 
     protected void randomizeSize() {                    //the variable 'random' is used again in randomizeSize
         size = random.nextFloat();                      //to choose a random decimal between 0 and 1 to represent
@@ -58,7 +52,7 @@ abstract public class Feature {
 
     /**Getter functions*/                               //right now, there's no reason to let other classes set
                                                         //any of the variables, so only "getter" functions have
-    public Image getSprite() {                          //been written
+    public ImageIcon getSprite() {                          //been written
         return sprite;
     }
 
@@ -66,12 +60,14 @@ abstract public class Feature {
         return size;
     }
 
-    public ArrayList<Image> getSpriteList(){
+    public ArrayList<ImageIcon> getSpriteList(){
         return spriteList;
     }
 
     public void printSprite(){
         System.out.println(spriteList.toString());
     }
+
+
 
 }
