@@ -7,12 +7,12 @@ import java.util.Random;
 
 
 
-public class MainWindow extends JFrame{
+public class FaceBuilder extends JFrame {
 
     protected Random random = new Random();   //this object will be used to generate random numbers
 
 
-    public MainWindow() {
+    public FaceBuilder() {
 //        JFrame frame = new JFrame("Avatar");
         Feature [] spriteList = {new Head(), new Hair(), new Eyes(), new Lips(), new Nose(), new Brow()};
         ImageIcon head = getScaledImage(spriteList[0].getSprite(),500,500);
@@ -143,22 +143,22 @@ public class MainWindow extends JFrame{
     }
 
 
-    public static void main (String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                new MainWindow();
-            }
-        });
-        
-//        win = new CanvasWindow("Avatar", 500, 500);
-
-
-
-//        System.out.println(feature.spriteList.size());
-//        feature.printSprite();
-
-
-    }
+//    public static void main (String[] args) {
+//        SwingUtilities.invokeLater(new Runnable() {
+//            public void run() {
+//                new FaceBuilder();
+//            }
+//        });
+//
+////        win = new CanvasWindow("Avatar", 500, 500);
+//
+//
+//
+////        System.out.println(feature.spriteList.size());
+////        feature.printSprite();
+//
+//
+//    }
 
 
 
