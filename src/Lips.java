@@ -12,13 +12,19 @@ public class Lips extends Feature {
 //        spriteList.add(image2);
     @Override
     protected void createSpriteList() {
-        ImageIcon icon = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Eyes/EyePair2_blue.png");
+        ImageIcon icon = new ImageIcon("Eyes/EyePair2_brown.png");
 //        Image image = icon.getImage();
 //        image.getScaledInstance(2,5,50);
 
 
         //        java.awt.Image image = new Image(0,0, "/Users/zazu/IdeaProjects/Comp221Project/Eyes/EyePair2_blue.png");
     //        java.awt.Image newImage = image;
+        spriteList.add(icon);
+        spriteList.add(icon);
+        spriteList.add(icon);
+        spriteList.add(icon);
+        spriteList.add(icon);
+        spriteList.add(icon);
         spriteList.add(icon);
 
     //        Image image2 = new Image (5,1, "/Users/zazu/IdeaProjects/Comp221Project/Eyes/EyePair2_brown.png");

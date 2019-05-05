@@ -40,17 +40,16 @@ abstract public class Feature {
     }                                                   // the Image in spriteList at that index
 
     protected void randomizeSpriteRange(int minLimit, int maxLimit) {
-        int index = random.nextInt(maxLimit) + minLimit;
+        int index = random.nextInt(maxLimit - minLimit) + minLimit;
         sprite = spriteList.get(index);
     }
-
 
     protected void randomizeSize() {                    //the variable 'random' is used again in randomizeSize
         size = random.nextInt();          //to choose a random decimal between 0 and 1 to represent
     }                                                   //the sprite's size (we can change the range later)
 
     protected void randomizeSizeRange(int minLimit, int maxLimit) {
-        size = random.nextInt(maxLimit) + minLimit;
+        size = random.nextInt(maxLimit - minLimit) + minLimit;
     }
 
     protected void randomizeAll() {                     //a simple method that calls all randomizing functions

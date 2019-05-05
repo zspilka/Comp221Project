@@ -14,19 +14,26 @@ public class FaceBuilder extends JPanel {
 
     public FaceBuilder() {
 //        JFrame frame = new JFrame("Avatar");
-        Feature [] spriteList = {new Head(), new Hair(), new Eyes(), new Lips(), new Nose(), new Brow()};
-        ImageIcon head = getScaledImage(spriteList[0].getSprite(),
-                spriteList[1].getSize(),spriteList[1].getSize());
-        ImageIcon hair = getScaledImage(spriteList[1].getSprite(),
-                spriteList[1].getSize(),spriteList[1].getSize());
-        ImageIcon eyes = getScaledImage(spriteList[2].getSprite(),
-                spriteList[2].getSize(),spriteList[2].getSize());
-        ImageIcon lips = getScaledImage(spriteList[3].getSprite(),
-                spriteList[3].getSize(),spriteList[3].getSize());
-        ImageIcon nose = getScaledImage(spriteList[4].getSprite(),
-                spriteList[4].getSize(),spriteList[4].getSize());
-        ImageIcon eyebrows = getScaledImage(spriteList[5].getSprite(),
-                spriteList[5].getSize(),spriteList[5].getSize());
+        Weirdifier weird = new Weirdifier();
+        weird.setWeirdnessLevel(10);
+        Head headFeature = new Head();
+        Feature [] featureList = {new Hair(), new Eyes(), new Lips(), new Nose(), new Brow()};
+        for (Feature feature : featureList) {
+            weird.setRandomSprite(feature);
+            weird.setRandomSize(feature);
+        }
+        ImageIcon head = getScaledImage(headFeature.getSprite(),
+                200 + featureList[0].getSize(),200 + featureList[0].getSize());
+        ImageIcon hair = getScaledImage(featureList[0].getSprite(),
+                225 + featureList[0].getSize(),225 + featureList[0].getSize());
+        ImageIcon eyes = getScaledImage(featureList[1].getSprite(),
+                200 + featureList[1].getSize(), 200+ featureList[1].getSize());
+        ImageIcon lips = getScaledImage(featureList[2].getSprite(),
+                200 + featureList[2].getSize(), 200 + featureList[2].getSize());
+        ImageIcon nose = getScaledImage(featureList[4].getSprite(),
+                200 + featureList[3].getSize(), 200 + featureList[3].getSize());
+        ImageIcon eyebrows = getScaledImage(featureList[4].getSprite(),
+                200 + featureList[4].getSize(), 200 + featureList[4].getSize());
 
         JLabel HEADlabel = new JLabel(head);
         HEADlabel.setBounds(0,0,500,500);
