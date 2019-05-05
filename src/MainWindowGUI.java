@@ -23,14 +23,14 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
         quit.addActionListener(this);
         tb.add(quit);
 
+        tb.add(new JToolBar.Separator());
+
+        avatarButton = new JButton("New Avatar");
+        tb.add(avatarButton);
+
         pack();
         Dimension winDim = new Dimension(500,500);
         setMinimumSize(winDim);
-
-
-
-
-
     }
 
 
@@ -55,6 +55,7 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
 
     @Override
     public void mouseClicked(MouseEvent e) {
+
 
     }
 

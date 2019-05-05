@@ -17,7 +17,7 @@ abstract public class Feature {
     //and a list of all the possible images that the sprite can appear as
 
     protected ImageIcon sprite;
-    protected double size;
+    protected int size;
     protected ArrayList<ImageIcon> spriteList = new ArrayList<>(9);          //since all spriteLists will be different, the variable is empty here
 //    protected Map <String, Image> spriteList;     //spriteList may be used as a Map
 
@@ -42,7 +42,7 @@ abstract public class Feature {
 
 
     protected void randomizeSize() {                    //the variable 'random' is used again in randomizeSize
-        size = random.nextFloat();                      //to choose a random decimal between 0 and 1 to represent
+        size = random.nextInt(60) + 40;                 //to choose a random decimal between 0 and 1 to represent
     }                                                   //the sprite's size (we can change the range later)
 
     protected void randomizeAll() {                     //a simple method that calls all randomizing functions
@@ -56,7 +56,7 @@ abstract public class Feature {
         return sprite;
     }
 
-    public double getSize() {
+    public int getSize() {
         return size;
     }
 
@@ -72,7 +72,4 @@ abstract public class Feature {
         randomizeSprite();
         return sprite;
     }
-
-
-
 }

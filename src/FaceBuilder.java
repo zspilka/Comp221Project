@@ -15,12 +15,18 @@ public class FaceBuilder extends JPanel {
     public FaceBuilder() {
 //        JFrame frame = new JFrame("Avatar");
         Feature [] spriteList = {new Head(), new Hair(), new Eyes(), new Lips(), new Nose(), new Brow()};
-        ImageIcon head = getScaledImage(spriteList[0].getSprite(), 500,500);
-        ImageIcon hair = getScaledImage(spriteList[1].getSprite(),500,500);
-        ImageIcon eyes = getScaledImage(spriteList[2].getSprite(),500,500);
-        ImageIcon lips = getScaledImage(spriteList[3].getSprite(),500,500);
-        ImageIcon nose = getScaledImage(spriteList[4].getSprite(),500,500);
-        ImageIcon eyebrows = getScaledImage(spriteList[5].getSprite(),500,500);
+        ImageIcon head = getScaledImage(spriteList[0].getSprite(),
+                spriteList[1].getSize(),spriteList[1].getSize());
+        ImageIcon hair = getScaledImage(spriteList[1].getSprite(),
+                spriteList[1].getSize(),spriteList[1].getSize());
+        ImageIcon eyes = getScaledImage(spriteList[2].getSprite(),
+                spriteList[2].getSize(),spriteList[2].getSize());
+        ImageIcon lips = getScaledImage(spriteList[3].getSprite(),
+                spriteList[3].getSize(),spriteList[3].getSize());
+        ImageIcon nose = getScaledImage(spriteList[4].getSprite(),
+                spriteList[4].getSize(),spriteList[4].getSize());
+        ImageIcon eyebrows = getScaledImage(spriteList[5].getSprite(),
+                spriteList[5].getSize(),spriteList[5].getSize());
 
         JLabel HEADlabel = new JLabel(head);
         HEADlabel.setBounds(0,0,500,500);
