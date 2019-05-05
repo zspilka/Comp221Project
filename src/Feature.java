@@ -34,16 +34,24 @@ abstract public class Feature {
                                                     //the subclasses of Feature, there's no point in
                                                     //defining createSpriteList here
 
-    protected void randomizeSprite() {
-        System.out.println(spriteList.size());           //randomizeSprite uses the variable 'random' to create
+    protected void randomizeSprite() {                  //randomizeSprite uses the variable 'random' to create
         int index = random.nextInt(spriteList.size());  //a random integer less than or equal to the size of
         sprite = spriteList.get(index);                 //spriteList. The sprite variable is then assigned to
     }                                                   // the Image in spriteList at that index
 
+    protected void randomizeSpriteRange(int minLimit, int maxLimit) {
+        int index = random.nextInt(maxLimit) + minLimit;
+        sprite = spriteList.get(index);
+    }
+
 
     protected void randomizeSize() {                    //the variable 'random' is used again in randomizeSize
-        size = random.nextInt(60) + 40;                 //to choose a random decimal between 0 and 1 to represent
+        size = random.nextInt();          //to choose a random decimal between 0 and 1 to represent
     }                                                   //the sprite's size (we can change the range later)
+
+    protected void randomizeSizeRange(int minLimit, int maxLimit) {
+        size = random.nextInt(maxLimit) + minLimit;
+    }
 
     protected void randomizeAll() {                     //a simple method that calls all randomizing functions
         randomizeSize();                                //in the Feature class. This can be overridden in any
