@@ -18,13 +18,12 @@ abstract public class Feature {
 
     protected ImageIcon sprite;
     protected int size;
-    protected ArrayList<ImageIcon> spriteList = new ArrayList<>(9);          //since all spriteLists will be different, the variable is empty here
-//    protected Map <String, Image> spriteList;     //spriteList may be used as a Map
+    protected ArrayList<ImageIcon> spriteList =
+            new ArrayList<>(9);   //since all spriteLists will be different, the variable is empty here
 
     protected Random random = new Random();   //this object will be used to generate random numbers
 
     Feature() {                 //all subclasses of Feature will automatically have to create their spriteList
-//        spriteList = new ArrayList<>();
         createSpriteList();     //and randomize their size and sprite when created, so these have been permanently
         randomizeSize();        //added to the Feature constructor (which the subclasses will use)
         randomizeSprite();
@@ -39,17 +38,17 @@ abstract public class Feature {
         sprite = spriteList.get(index);                 //spriteList. The sprite variable is then assigned to
     }                                                   // the Image in spriteList at that index
 
-    protected void randomizeSpriteRange(int minLimit, int maxLimit) {
-        int index = random.nextInt(maxLimit - minLimit) + minLimit;
-        sprite = spriteList.get(index);
+    protected void randomizeSpriteRange(int minLimit, int maxLimit) {       //a version of randomizeSprite that uses
+        int index = random.nextInt(maxLimit - minLimit) + minLimit; //a section of the spriteList depending on
+        sprite = spriteList.get(index);                                     //the limits provided
     }
 
     protected void randomizeSize() {                    //the variable 'random' is used again in randomizeSize
-        size = random.nextInt();          //to choose a random decimal between 0 and 1 to represent
+        size = random.nextInt();                        //to choose a random decimal between 0 and 1 to represent
     }                                                   //the sprite's size (we can change the range later)
 
-    protected void randomizeSizeRange(int minLimit, int maxLimit) {
-        size = random.nextInt(maxLimit - minLimit) + minLimit;
+    protected void randomizeSizeRange(int minLimit, int maxLimit) {         //a version of randomSize that generates a
+        size = random.nextInt(maxLimit - minLimit) + minLimit;       //number within a range
     }
 
     protected void randomizeAll() {                     //a simple method that calls all randomizing functions
@@ -61,7 +60,7 @@ abstract public class Feature {
                                                         //any of the variables, so only "getter" functions have
     public ImageIcon getSprite() {                          //been written
         return sprite;
-    }
+    }     //been written
 
     public int getSize() {
         return size;
@@ -73,8 +72,8 @@ abstract public class Feature {
 
     public void printSprite(){
         System.out.println(spriteList.toString());
-    }
-
+    }   //some functions for possible utilization
+                                                                               //later
     public ImageIcon getRandomSprite(){
         randomizeSprite();
         return sprite;
