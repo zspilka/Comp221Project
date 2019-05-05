@@ -1,8 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseListener;
+import java.awt.event.*;
 
-public class MainWindowGUI extends JFrame  {
+public class MainWindowGUI extends JFrame implements ActionListener, MouseListener, MouseMotionListener {
 
     private JButton avatarButton;
     private FaceBuilder faceBuilder;
@@ -12,6 +12,14 @@ public class MainWindowGUI extends JFrame  {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         setLayout(new BorderLayout());
+
+        faceBuilder = new FaceBuilder();
+        add(faceBuilder, BorderLayout.CENTER);
+
+        JButton quit = new JButton("Quit");
+        quit.setActionCommand("quit");
+        quit.addActionListener(this);
+
 
 
 
@@ -29,6 +37,46 @@ public class MainWindowGUI extends JFrame  {
 //            }
 //        });
 
+
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+    }
+
+    @Override
+    public void mouseClicked(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mousePressed(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseExited(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseDragged(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseMoved(MouseEvent e) {
 
     }
 }

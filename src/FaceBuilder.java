@@ -7,7 +7,7 @@ import java.util.Random;
 
 
 
-public class FaceBuilder extends JFrame {
+public class FaceBuilder extends JComponent {
 
     protected Random random = new Random();   //this object will be used to generate random numbers
 
@@ -63,9 +63,9 @@ public class FaceBuilder extends JFrame {
 //        facePanel.setMinimumSize(fDimensions);
         add(facePanel);
         setMinimumSize(fDimensions);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        pack();
-        setLocationRelativeTo(null);
+//        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        pack();
+//        setLocationRelativeTo(null);
         setVisible(true);
 
 
@@ -143,22 +143,22 @@ public class FaceBuilder extends JFrame {
     }
 
 
-    public static void main (String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                new FaceBuilder();
-            }
-        });
-
-//        win = new CanvasWindow("Avatar", 500, 500);
-
-
-
-//        System.out.println(feature.spriteList.size());
-//        feature.printSprite();
-
-
-    }
+//    public static void main (String[] args) {
+//        SwingUtilities.invokeLater(new Runnable() {
+//            public void run() {
+//                new FaceBuilder();
+//            }
+//        });
+//
+////        win = new CanvasWindow("Avatar", 500, 500);
+//
+//
+//
+////        System.out.println(feature.spriteList.size());
+////        feature.printSprite();
+//
+//
+//    }
 
 
 
