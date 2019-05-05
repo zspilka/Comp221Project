@@ -7,15 +7,15 @@ import java.util.Random;
 
 
 
-public class FaceBuilder extends JComponent {
+public class FaceBuilder extends JPanel {
 
-    protected Random random = new Random();   //this object will be used to generate random numbers
+//    protected Random random = new Random();   //this object will be used to generate random numbers
 
 
     public FaceBuilder() {
 //        JFrame frame = new JFrame("Avatar");
         Feature [] spriteList = {new Head(), new Hair(), new Eyes(), new Lips(), new Nose(), new Brow()};
-        ImageIcon head = getScaledImage(spriteList[0].getSprite(),(int) spriteList[0].getSize(),(int) spriteList[0].getSize());
+        ImageIcon head = getScaledImage(spriteList[0].getSprite(), 500,500);
         ImageIcon hair = getScaledImage(spriteList[1].getSprite(),500,500);
         ImageIcon eyes = getScaledImage(spriteList[2].getSprite(),500,500);
         ImageIcon lips = getScaledImage(spriteList[3].getSprite(),500,500);
@@ -48,7 +48,7 @@ public class FaceBuilder extends JComponent {
         layers.add(LIPSlabel, new Integer(5));
         layers.add(NOSElabel, new Integer(6));
 
-        JPanel facePanel = new JPanel()
+//        JPanel facePanel = new JPanel()
 //        {
 //            @Override
 //            public Dimension getPreferredSize() {
@@ -56,12 +56,12 @@ public class FaceBuilder extends JComponent {
 //            }
 //        }
         ;
-        facePanel.setLayout(null);
+        setLayout(null);
         layers.setBounds(0,0,600,600);
-        facePanel.add(layers);
+        add(layers);
         Dimension fDimensions = new Dimension(600,600);
 //        facePanel.setMinimumSize(fDimensions);
-        add(facePanel);
+//        add(facePanel);
         setMinimumSize(fDimensions);
 //        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //        pack();

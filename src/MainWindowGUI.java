@@ -16,9 +16,17 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
         faceBuilder = new FaceBuilder();
         add(faceBuilder, BorderLayout.CENTER);
 
+        JToolBar tb = new JToolBar();
+
         JButton quit = new JButton("Quit");
         quit.setActionCommand("quit");
         quit.addActionListener(this);
+        tb.add(quit);
+
+        pack();
+        Dimension winDim = new Dimension(500,500);
+        setMinimumSize(winDim);
+
 
 
 
