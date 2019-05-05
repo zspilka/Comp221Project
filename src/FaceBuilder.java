@@ -156,6 +156,14 @@ public class FaceBuilder extends JPanel {
         return imageIcon;
     }
 
+    public void clear() {
+        setVisible(false);
+    }
+
+    /**
+     * Clears the image
+     */
+
 
 //    public static void main (String[] args) {
 //        SwingUtilities.invokeLater(new Runnable() {
