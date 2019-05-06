@@ -25,14 +25,6 @@ public class FaceBuilder extends JPanel {
             weird.setRandomSize(feature);
         }
 
-//        for (Feature feature : featureList){
-//            if (feature.getSize() <0){
-//                System.out.println(feature.size);
-//            }
-//        }
-
-
-
         ImageIcon head = getScaledImage(headFeature.getSprite(),
                 200 + featureList[0].getSize(),200 + featureList[0].getSize());
 
