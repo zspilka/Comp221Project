@@ -9,13 +9,15 @@ import java.util.Random;
 
 public class FaceBuilder extends JPanel {
 
+//    private MainWindowGUI mwGUI;
+
 //    protected Random random = new Random();   //this object will be used to generate random numbers
 
 
     public FaceBuilder() {
 //        JFrame frame = new JFrame("Avatar");
         Weirdifier weird = new Weirdifier();
-        weird.setWeirdnessLevel(0);
+        weird.setWeirdnessLevel(10);
         Head headFeature = new Head();
         Feature [] featureList = {new Hair(), new Eyes(), new Lips(), new Nose(), new Brow()};
         for (Feature feature : featureList) {
@@ -34,6 +36,9 @@ public class FaceBuilder extends JPanel {
                 200 + featureList[3].getSize(), 200 + featureList[3].getSize());
         ImageIcon eyebrows = getScaledImage(featureList[4].getSprite(),
                 200 + featureList[4].getSize(), 200 + featureList[4].getSize());
+
+        System.out.println(featureList[0].getSprite());
+
 
         JLabel HEADlabel = new JLabel(head);
         HEADlabel.setBounds(0,0,500,500);
@@ -54,6 +59,8 @@ public class FaceBuilder extends JPanel {
         EYEBROWSlabel.setBounds(25,25,500,500);
 
         JLayeredPane layers = new JLayeredPane();
+
+
         layers.add(HEADlabel, new Integer(1));
         layers.add(EYEBROWSlabel, new Integer(2));
         layers.add(EYESlabel, new Integer(3));
@@ -70,6 +77,7 @@ public class FaceBuilder extends JPanel {
 //        }
         ;
         //hhhhiiiiiii
+//        System.out.println(layers);
         setLayout(null);
         layers.setBounds(0,0,600,600);
         add(layers);
@@ -81,6 +89,59 @@ public class FaceBuilder extends JPanel {
 //        pack();
 //        setLocationRelativeTo(null);
         setVisible(true);
+
+
+
+
+    }
+
+    public ImageIcon getScaledImage(ImageIcon srcImg, int w, int h){
+//        ImageIcon imageIcon = new ImageIcon("./img/imageName.png"); // load the image to a imageIcon
+        Image image = srcImg.getImage(); // transform it
+        Image newimg = image.getScaledInstance(w, h,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way
+        ImageIcon imageIcon = new ImageIcon(newimg);  // transform it back
+
+        return imageIcon;
+    }
+
+//    public void createNewAvatar() {
+//        removeAll();
+//        updateUI();
+//        repaint();
+//        new FaceBuilder();
+//
+//    }
+
+    /**
+     * Clears the image
+     */
+
+
+//    public static void main (String[] args) {
+//        SwingUtilities.invokeLater(new Runnable() {
+//            public void run() {
+//                new FaceBuilder();
+//            }
+//        });
+//    }
+
+
+
+
+}
+
+
+
+
+
+//        win = new CanvasWindow("Avatar", 500, 500);
+
+
+
+//        System.out.println(feature.spriteList.size());
+//        feature.printSprite();
+
+//        System.out.println("BRINT OUT THE THING");
 
 
 
@@ -143,38 +204,3 @@ public class FaceBuilder extends JPanel {
 
 
 ////        label.setIcon(new ImageIcon("src/img/school.png"));
-
-
-    }
-
-    public ImageIcon getScaledImage(ImageIcon srcImg, int w, int h){
-//        ImageIcon imageIcon = new ImageIcon("./img/imageName.png"); // load the image to a imageIcon
-        Image image = srcImg.getImage(); // transform it
-        Image newimg = image.getScaledInstance(w, h,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way
-        ImageIcon imageIcon = new ImageIcon(newimg);  // transform it back
-
-        return imageIcon;
-    }
-
-
-//    public static void main (String[] args) {
-//        SwingUtilities.invokeLater(new Runnable() {
-//            public void run() {
-//                new FaceBuilder();
-//            }
-//        });
-
-////        win = new CanvasWindow("Avatar", 500, 500);
-//
-//
-//
-////        System.out.println(feature.spriteList.size());
-////        feature.printSprite();
-//
-//
-//    }
-
-
-
-
-}
