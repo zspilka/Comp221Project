@@ -3,9 +3,9 @@ import comp124graphics.GraphicsObject;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+//java -Xmx200M MainWindowGUI
 
 
-//java -Xmx200M MainWindowGUI;
 public class MainWindowGUI extends JFrame implements ActionListener, MouseListener, MouseMotionListener {
 
     private JButton avatarButton;
@@ -21,20 +21,20 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
         faceBuilder = new FaceBuilder();
         add(faceBuilder, BorderLayout.CENTER);
 
-        JToolBar tb = new JToolBar();
-        add(tb, BorderLayout.NORTH);
-
-        quit = new JButton("Quit");
-        quit.setActionCommand("quit");
-        quit.addActionListener(this);
-        tb.add(quit);
-
-        tb.add(new JToolBar.Separator());
-
-
-        avatarButton = new JButton("New Avatar");
-        tb.add(avatarButton);
-        avatarButton.addActionListener(this);
+//        JToolBar tb = new JToolBar();
+//        add(tb, BorderLayout.NORTH);
+//
+//        quit = new JButton("Quit");
+//        quit.setActionCommand("quit");
+//        quit.addActionListener(this);
+//        tb.add(quit);
+//
+//        tb.add(new JToolBar.Separator());
+//
+//
+//        avatarButton = new JButton("New Avatar");
+//        tb.add(avatarButton);
+//        avatarButton.addActionListener(this);
 
 
         pack();
@@ -47,7 +47,6 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
 
     public static void main (String[] args) {
         MainWindowGUI frame = new MainWindowGUI();
-
         frame.setVisible(true);
 //        SwingUtilities.invokeLater(new Runnable() {
 //            public void run() {
@@ -70,13 +69,7 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == avatarButton){
-            faceBuilder.clear();
-            avatarButton.doClick();
-        }
-        else if (e.getSource() == quit){
 
-        }
 
     }
 

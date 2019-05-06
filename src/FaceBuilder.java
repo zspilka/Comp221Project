@@ -35,6 +35,9 @@ public class FaceBuilder extends JPanel {
         ImageIcon eyebrows = getScaledImage(featureList[4].getSprite(),
                 200 + featureList[4].getSize(), 200 + featureList[4].getSize());
 
+        System.out.println(featureList[0].getSprite());
+
+
         JLabel HEADlabel = new JLabel(head);
         HEADlabel.setBounds(0,0,500,500);
 
@@ -54,6 +57,8 @@ public class FaceBuilder extends JPanel {
         EYEBROWSlabel.setBounds(25,25,500,500);
 
         JLayeredPane layers = new JLayeredPane();
+
+
         layers.add(HEADlabel, new Integer(1));
         layers.add(EYEBROWSlabel, new Integer(2));
         layers.add(EYESlabel, new Integer(3));
@@ -70,6 +75,7 @@ public class FaceBuilder extends JPanel {
 //        }
         ;
         //hhhhiiiiiii
+//        System.out.println(layers);
         setLayout(null);
         layers.setBounds(0,0,600,600);
         add(layers);
@@ -81,6 +87,9 @@ public class FaceBuilder extends JPanel {
 //        pack();
 //        setLocationRelativeTo(null);
         setVisible(true);
+
+
+//        System.out.println("BRINT OUT THE THING");
 
 
 
@@ -165,22 +174,22 @@ public class FaceBuilder extends JPanel {
      */
 
 
-//    public static void main (String[] args) {
-//        SwingUtilities.invokeLater(new Runnable() {
-//            public void run() {
-//                new FaceBuilder();
-//            }
-//        });
-//
-////        win = new CanvasWindow("Avatar", 500, 500);
-//
-//
-//
-////        System.out.println(feature.spriteList.size());
-////        feature.printSprite();
-//
-//
-//    }
+    public static void main (String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                new FaceBuilder();
+            }
+        });
+
+//        win = new CanvasWindow("Avatar", 500, 500);
+
+
+
+//        System.out.println(feature.spriteList.size());
+//        feature.printSprite();
+
+
+    }
 
 
 
