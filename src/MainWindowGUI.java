@@ -25,7 +25,7 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
         add(tb, BorderLayout.NORTH);
 
         quit = new JButton("Quit");
-        quit.setActionCommand("quit");
+        quit.setActionCommand("Quit");
         quit.addActionListener(this);
         tb.add(quit);
 
@@ -33,8 +33,9 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
 
 
         avatarButton = new JButton("New Avatar");
-        tb.add(avatarButton);
+        avatarButton.setActionCommand("New Avatar");
         avatarButton.addActionListener(this);
+        tb.add(avatarButton);
 
 
         pack();
@@ -67,9 +68,14 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
 //        r.mouseRelease(InputEvent.BUTTON1_MASK);
 //    }
 
-    @Override
     public void actionPerformed(ActionEvent e) {
-
+        String cmd = e.getActionCommand();
+        if(cmd.equals("New Avatar")){
+            createNewAvatar();
+        }
+        else if (cmd.equals("Quit")){
+            System.exit(0);
+        }
 
 
     }
@@ -106,6 +112,18 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
 
     @Override
     public void mouseMoved(MouseEvent e) {
+
+    }
+
+
+
+    public void createNewAvatar() {
+        faceBuilder.removeAll();
+        faceBuilder.updateUI();
+//        faceBuilder.repaint();
+        faceBuilder = new FaceBuilder();
+        add(faceBuilder, BorderLayout.CENTER);
+//        faceBuilder.repaint();
 
     }
 }
