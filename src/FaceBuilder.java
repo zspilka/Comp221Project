@@ -9,9 +9,9 @@ import java.util.Random;
 
 public class FaceBuilder extends JPanel {
 
-//    private MainWindowGUI mwGUI;
 
-//    protected Random random = new Random();   //this object will be used to generate random numbers
+
+    protected Random random = new Random();   //this object will be used to generate random numbers
 
 
     public FaceBuilder() {
@@ -24,6 +24,13 @@ public class FaceBuilder extends JPanel {
             weird.setRandomSprite(feature);
             weird.setRandomSize(feature);
         }
+
+//        for (Feature feature : featureList){
+//            if (feature.getSize() <0){
+//                System.out.println(feature.size);
+//            }
+//        }
+
 
 
         ImageIcon head = getScaledImage(headFeature.getSprite(),
