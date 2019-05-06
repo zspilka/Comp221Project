@@ -83,6 +83,10 @@ public class Eyes extends Feature {
         ImageIcon icon32 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Eyes/EyesPair14_yellow.png");
         spriteList.add(icon32);
 
+
+
+//        System.out.println(icon.getIconWidth()+"\n"+icon.getIconHeight());
+
 //        //Realitive Path verison:
 //        ImageIcon icon = new ImageIcon("Eyes/EyePair2_blue.png");
 //        spriteList.add(icon);
