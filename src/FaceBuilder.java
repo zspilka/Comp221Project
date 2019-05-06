@@ -15,7 +15,7 @@ public class FaceBuilder extends JPanel {
     public FaceBuilder() {
 //        JFrame frame = new JFrame("Avatar");
         Weirdifier weird = new Weirdifier();
-        weird.setWeirdnessLevel(10);
+        weird.setWeirdnessLevel(0);
         Head headFeature = new Head();
         Feature [] featureList = {new Hair(), new Eyes(), new Lips(), new Nose(), new Brow()};
         for (Feature feature : featureList) {
@@ -163,7 +163,7 @@ public class FaceBuilder extends JPanel {
 //                new FaceBuilder();
 //            }
 //        });
-//
+
 ////        win = new CanvasWindow("Avatar", 500, 500);
 //
 //
