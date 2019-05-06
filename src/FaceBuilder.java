@@ -8,6 +8,7 @@ import java.util.Random;
 
 
 public class FaceBuilder extends JPanel {
+    protected MainWindowGUI mwGUI;
 
 
 
@@ -59,7 +60,7 @@ public class FaceBuilder extends JPanel {
         NOSElabel.setBounds(0,0,500,500);
 
         JLabel EYEBROWSlabel = new JLabel(eyebrows);
-        EYEBROWSlabel.setBounds(25,25,500,500);
+        EYEBROWSlabel.setBounds(0,0,500,500);
 
         JLayeredPane layers = new JLayeredPane();
 

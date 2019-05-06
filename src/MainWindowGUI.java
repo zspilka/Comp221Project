@@ -10,7 +10,8 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
 
     private JButton avatarButton;
     private FaceBuilder faceBuilder;
-    protected JButton quit;
+    private JButton quit;
+    protected int userWeirdness;
 
 
     public MainWindowGUI(){
