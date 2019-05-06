@@ -48,7 +48,9 @@ abstract public class Feature {
     }                                                   //the sprite's size (we can change the range later)
 
     protected void randomizeSizeRange(int minLimit, int maxLimit) {         //a version of randomSize that generates a
+//        System.out.println(minLimit +"\n"+maxLimit);
         size = random.nextInt(maxLimit - minLimit) + minLimit;       //number within a range
+//        System.out.println(size);
     }
 
     protected void randomizeAll() {                     //a simple method that calls all randomizing functions
