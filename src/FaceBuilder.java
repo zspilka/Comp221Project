@@ -165,8 +165,10 @@ public class FaceBuilder extends JPanel {
         return imageIcon;
     }
 
-    public void clear() {
-        setVisible(false);
+    public void createNewAvatar() {
+        removeAll();
+        new FaceBuilder();
+
     }
 
     /**
@@ -174,12 +176,12 @@ public class FaceBuilder extends JPanel {
      */
 
 
-    public static void main (String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                new FaceBuilder();
-            }
-        });
+//    public static void main (String[] args) {
+//        SwingUtilities.invokeLater(new Runnable() {
+//            public void run() {
+//                new FaceBuilder();
+//            }
+//        });
 
 //        win = new CanvasWindow("Avatar", 500, 500);
 
@@ -189,7 +191,7 @@ public class FaceBuilder extends JPanel {
 //        feature.printSprite();
 
 
-    }
+//    }
 
 
 

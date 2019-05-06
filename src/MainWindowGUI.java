@@ -21,20 +21,20 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
         faceBuilder = new FaceBuilder();
         add(faceBuilder, BorderLayout.CENTER);
 
-//        JToolBar tb = new JToolBar();
-//        add(tb, BorderLayout.NORTH);
-//
-//        quit = new JButton("Quit");
-//        quit.setActionCommand("quit");
-//        quit.addActionListener(this);
-//        tb.add(quit);
-//
-//        tb.add(new JToolBar.Separator());
-//
-//
-//        avatarButton = new JButton("New Avatar");
-//        tb.add(avatarButton);
-//        avatarButton.addActionListener(this);
+        JToolBar tb = new JToolBar();
+        add(tb, BorderLayout.NORTH);
+
+        quit = new JButton("Quit");
+        quit.setActionCommand("quit");
+        quit.addActionListener(this);
+        tb.add(quit);
+
+        tb.add(new JToolBar.Separator());
+
+
+        avatarButton = new JButton("New Avatar");
+        tb.add(avatarButton);
+        avatarButton.addActionListener(this);
 
 
         pack();
@@ -69,6 +69,7 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        
 
 
     }
