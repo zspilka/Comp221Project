@@ -97,7 +97,7 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
             Integer value = (int) cb.getSelectedItem();
 
             userWeirdness = value;
-            System.out.println(userWeirdness);
+//            System.out.println(userWeirdness);
             faceBuilder.updateWeirdness(userWeirdness);
             createNewAvatar();
         }
