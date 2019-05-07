@@ -8,7 +8,7 @@ import java.util.Random;
 
 
 public class FaceBuilder extends JPanel {
-    protected MainWindowGUI mwGUI;
+    public int weridnessLevel = 10;
 
 
 
@@ -17,7 +17,8 @@ public class FaceBuilder extends JPanel {
 
     public FaceBuilder() {
         Weirdifier weird = new Weirdifier();
-        weird.setWeirdnessLevel(10);
+//        weird.setWeirdnessLevel(10);
+        weird.setWeirdnessLevel(weridnessLevel);
 
         Head headFeature = new Head();
         Feature [] featureList = {new Hair(), new Eyes(), new Lips(), new Nose(), new Brow()};
@@ -97,6 +98,11 @@ public class FaceBuilder extends JPanel {
         ImageIcon imageIcon = new ImageIcon(newimg);  // transform it back
 
         return imageIcon;
+    }
+
+    public void updateWeirdness(int stanLee){
+        weridnessLevel = stanLee;
+
     }
 
 //
