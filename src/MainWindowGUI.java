@@ -14,6 +14,7 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
     protected int userWeirdness;
 
 
+
     public MainWindowGUI(){
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
@@ -37,6 +38,22 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
         avatarButton.setActionCommand("New Avatar");
         avatarButton.addActionListener(this);
         tb.add(avatarButton);
+
+        tb.add(new JToolBar.Separator());
+
+//        JLabel lbl = new JLabel("Select one of the possible choices and click 'New Avatar' ");
+//        lbl.setVisible(true);
+//        tb.add(lbl);
+//        "Select your desired level of weirdness, then hit 'New Avatar'","1","2", "3","4","5","6", "7","8","9","10"
+        Integer[] choices = {1,2,3,4,5,6,7,8,9,10};
+
+        final JComboBox<Integer> cb = new JComboBox<Integer>(choices);
+
+        cb.setVisible(true);
+//        cb.setSelectedIndex(10);
+        cb.addActionListener(this);
+        tb.add(cb);
+
 
 
         pack();
@@ -80,6 +97,7 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
 
 
     }
+
 
     @Override
     public void mouseClicked(MouseEvent e) {
