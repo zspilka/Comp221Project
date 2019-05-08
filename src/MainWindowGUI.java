@@ -12,6 +12,8 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
     private FaceBuilder faceBuilder;
     private JButton quit;
     protected int userWeirdness;
+    protected JComboBox<Integer> cb;
+
 
 
     public MainWindowGUI(){
@@ -37,6 +39,24 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
         avatarButton.setActionCommand("New Avatar");
         avatarButton.addActionListener(this);
         tb.add(avatarButton);
+
+        tb.add(new JToolBar.Separator());
+
+//        JLabel lbl = new JLabel("Select one of the possible choices and click 'New Avatar' ");
+//        lbl.setVisible(true);
+//        tb.add(lbl);
+//        "Select your desired level of weirdness, then hit 'New Avatar'","1","2", "3","4","5","6", "7","8","9","10"
+        Integer[] choices = {1,2,3,4,5,6,7,8,9,10};
+
+//        final JComboBox<Integer> cb = new JComboBox<>(choices);
+        cb = new JComboBox<>(choices);
+
+
+        cb.setVisible(true);
+//        cb.setSelectedIndex(10);
+        cb.addActionListener(this);
+        tb.add(cb);
+
 
 
         pack();
@@ -69,6 +89,13 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
     public void actionPerformed(ActionEvent e) {
         String cmd = e.getActionCommand();
         if(cmd.equals("New Avatar")){
+            e.getSource();
+
+            Integer value = (int) cb.getSelectedItem();
+
+            userWeirdness = value;
+//            System.out.println(userWeirdness);
+            faceBuilder.updateWeirdness(userWeirdness);
             createNewAvatar();
         }
         else if (cmd.equals("Quit")){
@@ -77,6 +104,7 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
 
 
     }
+
 
     @Override
     public void mouseClicked(MouseEvent e) {
