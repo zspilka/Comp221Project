@@ -8,7 +8,7 @@ import java.util.Random;
 
 
 public class FaceBuilder extends JPanel {
-    public int weridnessLevel = 10;
+    public int weirdnessLevel = 10;
 
 
 
@@ -17,8 +17,8 @@ public class FaceBuilder extends JPanel {
 
     public FaceBuilder() {
         Weirdifier weird = new Weirdifier();
-//        weird.setWeirdnessLevel(10);
-        weird.setWeirdnessLevel(weridnessLevel);
+//        weird.setWeirdnessLevel(1);
+        weird.setWeirdnessLevel(weirdnessLevel);
 
         Head headFeature = new Head();
         Feature [] featureList = {new Hair(), new Eyes(), new Lips(), new Nose(), new Brow()};
@@ -28,56 +28,56 @@ public class FaceBuilder extends JPanel {
         }
 
         ImageIcon head = getScaledImage(headFeature.getSprite(),
-                200 + featureList[0].getSize(),200 + featureList[0].getSize());
+                350,350);
 
         ImageIcon hair = getScaledImage(featureList[0].getSprite(),
-                225 + featureList[0].getSize(),225 + featureList[0].getSize());
+                325 + featureList[0].getSize(),325 + featureList[0].getSize());
 
         ImageIcon eyes = getScaledImage(featureList[1].getSprite(),
-                200 + featureList[1].getSize(), 200+ featureList[1].getSize());
+                175 + featureList[1].getSize(),  25 + featureList[1].getSize());
 
         ImageIcon lips = getScaledImage(featureList[2].getSprite(),
-                200 + featureList[2].getSize(), 200 + featureList[2].getSize());
+                125 + featureList[2].getSize(), 125 + featureList[2].getSize());
 
-        ImageIcon nose = getScaledImage(featureList[4].getSprite(),
-                200 + featureList[3].getSize(), 200 + featureList[3].getSize());
+        ImageIcon nose = getScaledImage(featureList[3].getSprite(),
+                10 + featureList[3].getSize(), 10 + featureList[3].getSize());
 
         ImageIcon eyebrows = getScaledImage(featureList[4].getSprite(),
-                200 + featureList[4].getSize(), 200 + featureList[4].getSize());
+                175 + featureList[4].getSize(), 10 + featureList[4].getSize());
 
         JLabel HEADlabel = new JLabel(head);
-        HEADlabel.setBounds(0,0,500,500);
+        HEADlabel.setBounds(200,100,500,500);
 
         JLabel HAIRlabel = new JLabel(hair);
-        HAIRlabel.setBounds(0,0,500,500);
+        HAIRlabel.setBounds(200,50,500,500);
 
         JLabel EYESlabel = new JLabel(eyes);
-        EYESlabel.setBounds(0,0,500,500);
+        EYESlabel.setBounds(200,50,500,500);
 
         JLabel LIPSlabel = new JLabel(lips);
-        LIPSlabel.setBounds(0,0,500,500);
+        LIPSlabel.setBounds(200,200,500,500);
 
         JLabel NOSElabel = new JLabel(nose);
-        NOSElabel.setBounds(0,0,500,500);
+        NOSElabel.setBounds(200,100,500,500);
 
         JLabel EYEBROWSlabel = new JLabel(eyebrows);
-        EYEBROWSlabel.setBounds(0,0,500,500);
+        EYEBROWSlabel.setBounds(200,0,500,500);
 
         JLayeredPane layers = new JLayeredPane();
 
 
-        layers.add(HEADlabel, new Integer(1));
+        layers.add(HEADlabel, new Integer (1));
         layers.add(EYEBROWSlabel, new Integer(2));
         layers.add(EYESlabel, new Integer(3));
-        layers.add(HAIRlabel, new Integer(4));
+//        layers.add(HAIRlabel, new Integer(4));
         layers.add(LIPSlabel, new Integer(5));
         layers.add(NOSElabel, new Integer(6));
 
 
         setLayout(null);
-        layers.setBounds(0,0,600,600);
+        layers.setBounds(0,0,1000,700);
         add(layers);
-        Dimension fDimensions = new Dimension(600,600);
+        Dimension fDimensions = new Dimension(1000,700);
 //        facePanel.setMinimumSize(fDimensions);
 //        add(facePanel);
         setMinimumSize(fDimensions);
@@ -101,7 +101,7 @@ public class FaceBuilder extends JPanel {
     }
 
     public void updateWeirdness(int stanLee){
-        weridnessLevel = stanLee;
+        weirdnessLevel = stanLee;
 
     }
 

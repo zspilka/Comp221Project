@@ -60,7 +60,7 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
 
 
         pack();
-        Dimension winDim = new Dimension(500,500);
+        Dimension winDim = new Dimension(1000,700);
         setMinimumSize(winDim);
     }
 

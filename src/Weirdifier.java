@@ -4,13 +4,8 @@ public class Weirdifier {
 
     public void setRandomSprite(Feature feature) {
         int listLength = feature.getSpriteList().size();
-        int minLimit;
+        int minLimit = 0;
         int maxLimit;
-        if ((listLength/2) * (weirdnessLevel/10) >= 0) {
-            minLimit = (listLength / 2) * (weirdnessLevel / 10);
-        } else {
-            minLimit = 0;
-        }
         if ((listLength/2) + (listLength/2 * (weirdnessLevel/10)) - 1 >= listLength/2) {
             maxLimit = listLength/2 + (listLength/2 * (weirdnessLevel/10) - 1);
         } else {
