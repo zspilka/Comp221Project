@@ -44,9 +44,6 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
         setMinimumSize(winDim);
     }
 
-
-
-
     public static void main (String[] args) {
         MainWindowGUI frame = new MainWindowGUI();
         frame.setVisible(true);
