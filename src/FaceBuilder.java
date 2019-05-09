@@ -8,20 +8,17 @@ import java.util.Random;
 
 
 public class FaceBuilder extends JPanel {
-    public int weirdnessLevel = 10;
-
-
 
     protected Random random = new Random();   //this object will be used to generate random numbers
+    Feature [] featureList = {new Hair(), new Eyes(), new Lips(), new Nose(), new Brow()};
+    Weirdifier weird = new Weirdifier();
 
 
-    public FaceBuilder() {
-        Weirdifier weird = new Weirdifier();
-//        weird.setWeirdnessLevel(1);
+    public FaceBuilder(int weirdnessLevel) {
+
         weird.setWeirdnessLevel(weirdnessLevel);
 
         Head headFeature = new Head();
-        Feature [] featureList = {new Hair(), new Eyes(), new Lips(), new Nose(), new Brow()};
         for (Feature feature : featureList) {
             weird.setRandomSprite(feature);
             weird.setRandomSize(feature);
@@ -31,7 +28,7 @@ public class FaceBuilder extends JPanel {
                 350,350);
 
         ImageIcon hair = getScaledImage(featureList[0].getSprite(),
-                325 + featureList[0].getSize(),325 + featureList[0].getSize());
+                featureList[0].getWidth(), featureList[0].getHeight());
 
         ImageIcon eyes = getScaledImage(featureList[1].getSprite(),
                 175 + featureList[1].getSize(),  25 + featureList[1].getSize());
@@ -49,7 +46,7 @@ public class FaceBuilder extends JPanel {
         HEADlabel.setBounds(200,100,500,500);
 
         JLabel HAIRlabel = new JLabel(hair);
-        HAIRlabel.setBounds(200,50,500,500);
+        HAIRlabel.setBounds(featureList[0].getX(), featureList[0].getY(),500,500);
 
         JLabel EYESlabel = new JLabel(eyes);
         EYESlabel.setBounds(200,50,500,500);
@@ -69,7 +66,7 @@ public class FaceBuilder extends JPanel {
         layers.add(HEADlabel, new Integer (1));
         layers.add(EYEBROWSlabel, new Integer(2));
         layers.add(EYESlabel, new Integer(3));
-//        layers.add(HAIRlabel, new Integer(4));
+        layers.add(HAIRlabel, new Integer(4));
         layers.add(LIPSlabel, new Integer(5));
         layers.add(NOSElabel, new Integer(6));
 
@@ -101,8 +98,7 @@ public class FaceBuilder extends JPanel {
     }
 
     public void updateWeirdness(int stanLee){
-        weirdnessLevel = stanLee;
-
+        weird.setWeirdnessLevel(stanLee);
     }
 
 //

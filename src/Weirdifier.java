@@ -1,6 +1,6 @@
 public class Weirdifier {
 
-    int weirdnessLevel;
+    int weirdnessLevel = 10;
 
     public void setRandomSprite(Feature feature) {
         int listLength = feature.getSpriteList().size();
@@ -24,4 +24,5 @@ public class Weirdifier {
             this.weirdnessLevel = weirdnessLevel;
         }
     }
+
 }

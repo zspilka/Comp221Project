@@ -21,6 +21,13 @@ abstract public class Feature {
     protected ArrayList<ImageIcon> spriteList =
             new ArrayList<>(9);   //since all spriteLists will be different, the variable is empty here
 
+    //variables important to the placement of sprites
+
+    int x;
+    int y;
+    int width;
+    int height;
+
     protected Random random = new Random();   //this object will be used to generate random numbers
 
     Feature() {                 //all subclasses of Feature will automatically have to create their spriteList
@@ -48,15 +55,16 @@ abstract public class Feature {
     }                                                   //the sprite's size (we can change the range later)
 
     protected void randomizeSizeRange(int minLimit, int maxLimit) {         //a version of randomSize that generates a
-//        System.out.println(minLimit +"\n"+maxLimit);
         size = random.nextInt(maxLimit - minLimit) + minLimit;       //number within a range
-//        System.out.println(size);
     }
 
     protected void randomizeAll() {                     //a simple method that calls all randomizing functions
         randomizeSize();                                //in the Feature class. This can be overridden in any
         randomizeSprite();                              //subclasses that end up having extra randomizing methods
     }
+
+    protected void setStats() {                 //to be used when individual sprites need
+    }                                           //specific coordinates or sizes when placed
 
     /**Getter functions*/                               //right now, there's no reason to let other classes set
                                                         //any of the variables, so only "getter" functions have
@@ -70,6 +78,22 @@ abstract public class Feature {
 
     public ArrayList<ImageIcon> getSpriteList(){
         return spriteList;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
     }
 
     public void printSprite(){

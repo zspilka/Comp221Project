@@ -21,7 +21,7 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
 
         setLayout(new BorderLayout());
 
-        faceBuilder = new FaceBuilder();
+        faceBuilder = new FaceBuilder(1);
         add(faceBuilder, BorderLayout.CENTER);
 
         JToolBar tb = new JToolBar();
@@ -141,13 +141,11 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
 
     }
 
-
-
     public void createNewAvatar() {
         faceBuilder.removeAll();
         faceBuilder.updateUI();
 //        faceBuilder.repaint();
-        faceBuilder = new FaceBuilder();
+        faceBuilder = new FaceBuilder(userWeirdness);
         add(faceBuilder, BorderLayout.CENTER);
 //        faceBuilder.repaint();
 

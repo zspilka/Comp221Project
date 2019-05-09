@@ -29,9 +29,9 @@ public class Lips extends Feature {
 //        spriteList.add(icon);
 //        ImageIcon icon2 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Mouth/Mouth1-1.png");
 //        spriteList.add(icon2);
-//        ImageIcon icon3 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Mouth/Mouth2-1.png");
+//        ImageIcon icon3 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Mouth/Mouth6-1.png");
 //        spriteList.add(icon3);
-//        ImageIcon icon4 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Mouth/Mouth6-1.png");
+//        ImageIcon icon4 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Mouth/Mouth2-1.png");
 //        spriteList.add(icon4);
 //        ImageIcon icon5 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Mouth/Mouth5-1.png");
 //        spriteList.add(icon5);
@@ -45,9 +45,9 @@ public class Lips extends Feature {
         spriteList.add(icon);
         ImageIcon icon2 = new ImageIcon("Mouth/Mouth1-1.png");
         spriteList.add(icon2);
-        ImageIcon icon3 = new ImageIcon("Mouth/Mouth2-1.png");
+        ImageIcon icon3 = new ImageIcon("Mouth/Mouth6-1.png");
         spriteList.add(icon3);
-        ImageIcon icon4 = new ImageIcon("Mouth/Mouth6-1.png");
+        ImageIcon icon4 = new ImageIcon("Mouth/Mouth2-1.png");
         spriteList.add(icon4);
         ImageIcon icon5 = new ImageIcon("Mouth/Mouth5-1.png");
         spriteList.add(icon5);
