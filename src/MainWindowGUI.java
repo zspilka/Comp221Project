@@ -14,8 +14,6 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
     protected int userWeirdness;
     protected JComboBox<Integer> cb;
 
-
-
     public MainWindowGUI(){
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 

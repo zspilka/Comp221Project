@@ -6,7 +6,7 @@ public class Weirdifier {
         int listLength = feature.getSpriteList().size();
         int minLimit = 0;
         int maxLimit;
-        if ((listLength/2) + (listLength/2 * (weirdnessLevel/10)) - 1 >= listLength/2) {
+        if ((listLength/2) + (listLength/2 * (weirdnessLevel/10)) - 1 > listLength/2) {
             maxLimit = listLength/2 + (listLength/2 * (weirdnessLevel/10));
         } else {
             maxLimit = listLength/2;

@@ -17,7 +17,7 @@ public class Hair extends Feature {
     @Override
     protected void randomizeSpriteRange(int minLimit, int maxLimit) {
         int index = random.nextInt(maxLimit - minLimit) + minLimit;
-        sprite = spriteList.get(8);
+        sprite = spriteList.get(index);
         setStats();
     }
 
@@ -128,20 +128,20 @@ public class Hair extends Feature {
             width = 345;
             height = 225;
         } else if (sprite.toString().equals("Hair/Mohawk.png")){
-            y = 100;
+            y = -100;
             x = 200;
-            width = 400;
-            height = 400;
+            width = 100;
+            height = 125;
         } else if (sprite.toString().equals("Hair/WeirdToupee.png")){
-            y = 100;
+            y = -60;
             x = 200;
-            width = 400;
-            height = 400;
+            width = 100;
+            height = 50;
         } else if (sprite.toString().equals("Hair/BabySprig.png")){
-            y = 100;
+            y = -50;
             x = 200;
-            width = 400;
-            height = 400;
+            width = 50;
+            height = 50;
         }
     }
 }
