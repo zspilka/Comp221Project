@@ -23,7 +23,7 @@ public class FaceBuilder extends JPanel {
 
 
 //        System.out.println("\n Danny: "+danny);
-        if (danny >= 0.2){
+        if (danny > 0.01){
 
 
             weird.setWeirdnessLevel(weirdnessLevel);
@@ -86,7 +86,7 @@ public class FaceBuilder extends JPanel {
             add(layers);
 
         }
-//        else if (danny< 0.2){
+//        else if (danny< 0.01){
 //            double tarus = aries.nextDouble();
 ////            double tarus = 0.1;
 //            System.out.println("Tarus: "+tarus);
@@ -211,7 +211,7 @@ public class FaceBuilder extends JPanel {
 //
 //
 //        }
-        else if (danny< 0.2){
+        else if (danny<= 0.01){
             double tarus = aries.nextDouble();
 //            double tarus = 0.1;
 //            System.out.println("Tarus: "+tarus);
