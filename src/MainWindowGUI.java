@@ -3,6 +3,7 @@ import comp124graphics.GraphicsObject;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.Random;
 //java -Xmx200M MainWindowGUI
 
 
@@ -13,6 +14,7 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
     private JButton quit;
     protected int userWeirdness;
     protected JComboBox<Integer> cb;
+    private Random randy;
 
     public MainWindowGUI(){
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -140,9 +142,11 @@ public class MainWindowGUI extends JFrame implements ActionListener, MouseListen
     }
 
     public void createNewAvatar() {
+        randy = new Random();
         faceBuilder.removeAll();
         faceBuilder.updateUI();
 //        faceBuilder.repaint();
+
         faceBuilder = new FaceBuilder(userWeirdness);
         add(faceBuilder, BorderLayout.CENTER);
 //        faceBuilder.repaint();
