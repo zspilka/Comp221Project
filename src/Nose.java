@@ -23,8 +23,7 @@ public class Nose extends Feature {
 
     @Override
     protected void createSpriteList() {
-        //Path
-//
+//        //Path
 //        ImageIcon icon = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Nose/Nose2-1.png");
 //        spriteList.add(icon);
 //
@@ -43,7 +42,7 @@ public class Nose extends Feature {
 //        ImageIcon icon6 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Nose/Nose6-1.png");
 //        spriteList.add(icon6);
 
-//        //Relative Path
+        //Relative Path
 
         ImageIcon icon = new ImageIcon("Nose/Nose2-1.png");
         spriteList.add(icon);
@@ -62,7 +61,6 @@ public class Nose extends Feature {
 
         ImageIcon icon6 = new ImageIcon("Nose/Nose6-1.png");
         spriteList.add(icon6);
-////
 
     }
 }

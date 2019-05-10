@@ -6,13 +6,13 @@ public class Weirdifier {
     public void setRandomSprite(Feature feature) {
         int listLength = feature.getSpriteList().size();
         weirdnessBonus = listLength/2 * (weirdnessLevel/10);
-        System.out.println((weirdnessLevel/10));
-        System.out.println("bonus is " + weirdnessBonus);
+//        System.out.println((weirdnessLevel/10));
+//        System.out.println("bonus is " + weirdnessBonus);
         int minLimit = 0;
         int maxLimit;
         if ((listLength/2) + weirdnessBonus - 1 > listLength/2) {
             maxLimit = (int)Math.round(listLength/2 + weirdnessBonus);
-            System.out.println("maxLimit is " + maxLimit);
+//            System.out.println("maxLimit is " + maxLimit);
         } else {
             maxLimit = listLength/2;
         }

@@ -48,7 +48,7 @@ abstract public class Feature {
     protected void randomizeSpriteRange(int minLimit, int maxLimit) {       //a version of randomizeSprite that uses
         int index = random.nextInt(maxLimit - minLimit) + minLimit; //a section of the spriteList depending on
         sprite = spriteList.get(index);                                     //the limits provided
-        System.out.println(sprite.toString());
+//        System.out.println(sprite.toString());
     }
 
     protected void randomizeSize() {                    //the variable 'random' is used again in randomizeSize
