@@ -25,34 +25,34 @@ public class Lips extends Feature {
 
 //        //Path
 //
-//        ImageIcon icon = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Mouth/Mouth3-1.png");
-//        spriteList.add(icon);
-//        ImageIcon icon2 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Mouth/Mouth1-1.png");
-//        spriteList.add(icon2);
-//        ImageIcon icon3 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Mouth/Mouth2-1.png");
-//        spriteList.add(icon3);
-//        ImageIcon icon4 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Mouth/Mouth6-1.png");
-//        spriteList.add(icon4);
-//        ImageIcon icon5 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Mouth/Mouth5-1.png");
-//        spriteList.add(icon5);
-//        ImageIcon icon6 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Mouth/Mouth4-1.png");
-//        spriteList.add(icon6);
+        ImageIcon icon = new ImageIcon("/Users/zaharaspilka/IdeaProjects/comp124-f18/Comp221Project/Mouth/Mouth1-1.png");
+        spriteList.add(icon);
+        ImageIcon icon2 = new ImageIcon("/Users/zaharaspilka/IdeaProjects/comp124-f18/Comp221Project/Mouth/Mouth2-1.png");
+        spriteList.add(icon2);
+        ImageIcon icon3 = new ImageIcon("/Users/zaharaspilka/IdeaProjects/comp124-f18/Comp221Project/Mouth/Mouth3-1.png");
+        spriteList.add(icon3);
+        ImageIcon icon4 = new ImageIcon("/Users/zaharaspilka/IdeaProjects/comp124-f18/Comp221Project/Mouth/Mouth4-1.png");
+        spriteList.add(icon4);
+        ImageIcon icon5 = new ImageIcon("/Users/zaharaspilka/IdeaProjects/comp124-f18/Comp221Project/Mouth/Mouth5-1.png");
+        spriteList.add(icon5);
+        ImageIcon icon6 = new ImageIcon("/Users/zaharaspilka/IdeaProjects/comp124-f18/Comp221Project/Mouth/Mouth6-1.png");
+        spriteList.add(icon6);
 
 
 
         //Relatiive Path:
-        ImageIcon icon = new ImageIcon("Mouth/Mouth3-1.png");
-        spriteList.add(icon);
-        ImageIcon icon2 = new ImageIcon("Mouth/Mouth1-1.png");
-        spriteList.add(icon2);
-        ImageIcon icon3 = new ImageIcon("Mouth/Mouth2-1.png");
-        spriteList.add(icon3);
-        ImageIcon icon4 = new ImageIcon("Mouth/Mouth6-1.png");
-        spriteList.add(icon4);
-        ImageIcon icon5 = new ImageIcon("Mouth/Mouth5-1.png");
-        spriteList.add(icon5);
-        ImageIcon icon6 = new ImageIcon("Mouth/Mouth4-1.png");
-        spriteList.add(icon6);
+//        ImageIcon icon = new ImageIcon("Mouth/Mouth3-1.png");
+//        spriteList.add(icon);
+//        ImageIcon icon2 = new ImageIcon("Mouth/Mouth1-1.png");
+//        spriteList.add(icon2);
+//        ImageIcon icon3 = new ImageIcon("Mouth/Mouth2-1.png");
+//        spriteList.add(icon3);
+//        ImageIcon icon4 = new ImageIcon("Mouth/Mouth6-1.png");
+//        spriteList.add(icon4);
+//        ImageIcon icon5 = new ImageIcon("Mouth/Mouth5-1.png");
+//        spriteList.add(icon5);
+//        ImageIcon icon6 = new ImageIcon("Mouth/Mouth4-1.png");
+//        spriteList.add(icon6);
 
     }
 }

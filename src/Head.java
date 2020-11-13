@@ -7,30 +7,30 @@ public class Head extends Feature {
 
 //        //Path:
 //
-//        ImageIcon icon = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Heads/Head1.png");
-//
-//        spriteList.add(icon);
-//        ImageIcon icon2 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Heads/Head2.png");
-//        spriteList.add(icon2);
-//        ImageIcon icon3 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Heads/Head3.png");
-//        spriteList.add(icon3);
-//        ImageIcon icon4 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Heads/Head4.png");
-//        spriteList.add(icon4);
-//        ImageIcon icon5 = new ImageIcon("/Users/zazu/IdeaProjects/Comp221Project/Heads/Head5.png");
-//        spriteList.add(icon5);
-
-        //realtive path
-        ImageIcon icon = new ImageIcon("Heads/Head1.png");
+        ImageIcon icon = new ImageIcon("/Users/zaharaspilka/IdeaProjects/comp124-f18/Comp221Project/Heads/Head1.png");
 
         spriteList.add(icon);
-        ImageIcon icon2 = new ImageIcon("Heads/Head2.png");
+        ImageIcon icon2 = new ImageIcon("/Users/zaharaspilka/IdeaProjects/comp124-f18/Comp221Project/Heads/Head2.png");
         spriteList.add(icon2);
-        ImageIcon icon3 = new ImageIcon("Heads/Head3.png");
+        ImageIcon icon3 = new ImageIcon("/Users/zaharaspilka/IdeaProjects/comp124-f18/Comp221Project/Heads/Head3.png");
         spriteList.add(icon3);
-        ImageIcon icon4 = new ImageIcon("Heads/Head4.png");
+        ImageIcon icon4 = new ImageIcon("/Users/zaharaspilka/IdeaProjects/comp124-f18/Comp221Project/Heads/Head4.png");
         spriteList.add(icon4);
-        ImageIcon icon5 = new ImageIcon("Heads/Head5.png");
+        ImageIcon icon5 = new ImageIcon("/Users/zaharaspilka/IdeaProjects/comp124-f18/Comp221Project/Heads/Head5.png");
         spriteList.add(icon5);
+
+        //realtive path
+//        ImageIcon icon = new ImageIcon("Heads/Head1.png");
+//
+//        spriteList.add(icon);
+//        ImageIcon icon2 = new ImageIcon("Heads/Head2.png");
+//        spriteList.add(icon2);
+//        ImageIcon icon3 = new ImageIcon("Heads/Head3.png");
+//        spriteList.add(icon3);
+//        ImageIcon icon4 = new ImageIcon("Heads/Head4.png");
+//        spriteList.add(icon4);
+//        ImageIcon icon5 = new ImageIcon("Heads/Head5.png");
+//        spriteList.add(icon5);
     }
 }
 

@@ -23,7 +23,7 @@ public class FaceBuilder extends JPanel {
 
 
 //        System.out.println("\n Danny: "+danny);
-        if (danny > 0.01){
+        if (danny > 0.1){
 
 
             weird.setWeirdnessLevel(weirdnessLevel);
@@ -211,12 +211,12 @@ public class FaceBuilder extends JPanel {
 //
 //
 //        }
-        else if (danny<= 0.01){
+        else if (danny<= 0.1){
             double tarus = aries.nextDouble();
 //            double tarus = 0.1;
 //            System.out.println("Tarus: "+tarus);
             if(tarus<= 0.1){
-                ImageIcon icon = new ImageIcon("John Mulaney/John1.png");
+                ImageIcon icon = new ImageIcon("/Users/zaharaspilka/IdeaProjects/comp124-f18/Comp221Project/John Mulaney/John1.jpeg");
                 JLabel johnLabel = new JLabel(icon);
 
                 JPanel layers = new JPanel();
@@ -227,7 +227,7 @@ public class FaceBuilder extends JPanel {
                 add(layers);
 
             }else if (tarus > 0.1 && tarus <= 0.2){
-                ImageIcon icon = new ImageIcon("John Mulaney/John2.gif");
+                ImageIcon icon = new ImageIcon("/Users/zaharaspilka/IdeaProjects/comp124-f18/Comp221Project/John Mulaney/John2.gif");
                 JLabel johnLabel = new JLabel(icon);
 
                 JPanel layers = new JPanel();
@@ -238,7 +238,7 @@ public class FaceBuilder extends JPanel {
                 add(layers);
 
             } else if (tarus > 0.2 && tarus <=0.3){
-                ImageIcon icon = new ImageIcon("John Mulaney/John3.png");
+                ImageIcon icon = new ImageIcon("/Users/zaharaspilka/IdeaProjects/comp124-f18/Comp221Project/John Mulaney/John3.jpeg");
                 JLabel johnLabel = new JLabel(icon);
 
                 JPanel layers = new JPanel();
@@ -250,7 +250,7 @@ public class FaceBuilder extends JPanel {
 
 
             }else if (tarus > 0.3 && tarus <=0.4){
-                ImageIcon icon = new ImageIcon("John Mulaney/John4.jpg");
+                ImageIcon icon = new ImageIcon("/Users/zaharaspilka/IdeaProjects/comp124-f18/Comp221Project/John Mulaney/John4.jpg");
                 JLabel johnLabel = new JLabel(icon);
 
                 JPanel layers = new JPanel();
@@ -262,7 +262,7 @@ public class FaceBuilder extends JPanel {
 
 
             }else if (tarus > 0.4 && tarus <=0.5){
-                ImageIcon icon = new ImageIcon("John Mulaney/John5.png");
+                ImageIcon icon = new ImageIcon("/Users/zaharaspilka/IdeaProjects/comp124-f18/Comp221Project/John Mulaney/John5.jpg");
                 JLabel johnLabel = new JLabel(icon);
 
                 JPanel layers = new JPanel();
@@ -274,7 +274,7 @@ public class FaceBuilder extends JPanel {
 
 
             }else if (tarus > 0.5 && tarus <=0.6){
-                ImageIcon icon = new ImageIcon("John Mulaney/John6.jpg");
+                ImageIcon icon = new ImageIcon("/Users/zaharaspilka/IdeaProjects/comp124-f18/Comp221Project/John Mulaney/John6.jpeg");
                 JLabel johnLabel = new JLabel(icon);
 
                 JPanel layers = new JPanel();
@@ -286,7 +286,7 @@ public class FaceBuilder extends JPanel {
 
 
             }else if (tarus > 0.6 && tarus <=0.7){
-                ImageIcon icon = new ImageIcon("John Mulaney/John7.png");
+                ImageIcon icon = new ImageIcon("/Users/zaharaspilka/IdeaProjects/comp124-f18/Comp221Project/John Mulaney/John7.jpeg");
                 JLabel johnLabel = new JLabel(icon);
 
                 JPanel layers = new JPanel();
@@ -298,7 +298,7 @@ public class FaceBuilder extends JPanel {
 
 
             }else if (tarus > 0.7 && tarus <=0.8){
-                ImageIcon icon = new ImageIcon("John Mulaney/John8.jpg");
+                ImageIcon icon = new ImageIcon("/Users/zaharaspilka/IdeaProjects/comp124-f18/Comp221Project/John Mulaney/John8.jpeg");
                 JLabel johnLabel = new JLabel(icon);
 
                 JPanel layers = new JPanel();
@@ -310,7 +310,7 @@ public class FaceBuilder extends JPanel {
 
 
             }else if (tarus > 0.8 && tarus <=0.9){
-                ImageIcon icon = new ImageIcon("John Mulaney/John9.jpg");
+                ImageIcon icon = new ImageIcon("/Users/zaharaspilka/IdeaProjects/comp124-f18/Comp221Project/John Mulaney/John9.png");
                 JLabel johnLabel = new JLabel(icon);
 
                 JPanel layers = new JPanel();
@@ -322,7 +322,7 @@ public class FaceBuilder extends JPanel {
 
 
             }else if (tarus > 0.9) {
-                ImageIcon icon = new ImageIcon("John Mulaney/John10.jpg");
+                ImageIcon icon = new ImageIcon("/Users/zaharaspilka/IdeaProjects/comp124-f18/Comp221Project/John Mulaney/John10.jpg");
                 JLabel johnLabel = new JLabel(icon);
 
                 JPanel layers = new JPanel();
